@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ArrowDown, ArrowUpRight, Instagram, Menu, Music2, Play, Youtube } from "lucide-react";
+import { ArrowDown, ArrowUpRight, Facebook, Instagram, Menu, Music2, Play, Youtube } from "lucide-react";
 import Countdown from "@/components/Countdown";
 import CursorGlow from "@/components/CursorGlow";
 import { Reveal } from "@/components/Reveal";
@@ -40,9 +40,10 @@ export default function Home() {
           <a href="#contact">Contact</a>
         </div>
         <div className="nav-socials">
-          <a href="#" aria-label="Instagram"><Instagram /></a>
-          <a href="#" aria-label="YouTube"><Youtube /></a>
-          <a href="#" aria-label="Streaming"><Music2 /></a>
+          <a href="https://www.instagram.com/karrsynthwave/" target="_blank" aria-label="Instagram"><Instagram /></a>
+          <a href="https://www.facebook.com/KARRRetroWave" target="_blank" aria-label="Facebook"><Facebook /></a>
+          <a href="https://www.youtube.com/@karrmusic5533" target="_blank" aria-label="YouTube"><Youtube /></a>
+          <a href="#" target="_blank" aria-label="Streaming"><Music2 /></a>
           <button className="menu-button" aria-label="Menu"><Menu /></button>
         </div>
       </nav>
@@ -93,9 +94,9 @@ export default function Home() {
         <div className="shell about-grid">
           <Reveal className="about-copy">
             <div className="section-code">// 01 &nbsp; THE PROJECT</div>
-            <h2>ABOUT<br/><span>K.A.R.R.</span></h2>
+            <h2>ABOUT<br/><span>K.A.R.R</span></h2>
             <p>
-              K.A.R.R. lives where heavy guitars, analogue synths and night-drive electronics collide. A cinematic project built around atmosphere, melody and the darker glow of the 1980s.
+             K.A.R.R is a professional power trio originating from the vibrant island of Malta. Drawing from diverse musical influences and backgrounds, the band crafts a distinctive sound rooted in synthwave, characterized by rich synthesizer textures and dynamic guitar-driven soundscapes. Buckle up as you take on a trip down the memory lane as time travel has never been this easy!
             </p>
             <p className="muted-copy">
               This is the starting version of the story section — you can replace this with your real biography whenever you want.
@@ -140,7 +141,7 @@ export default function Home() {
             <div className="release-date">28TH AUGUST 2026</div>
             <p>New music from K.A.R.R. arrives August 28. This section is ready for your Spotify pre-save URL, track list and platform links when you have them.</p>
             <div className="platform-actions">
-              <a className="neon-button primary wide" href="#"><Music2 /> PRE-SAVE / LISTEN</a>
+              <a className="neon-button primary wide" target="_blank" href="https://distrokid.com/hyperfollow/karr/runaway-heart?fbclid=IwY2xjawTy2GlwZG9mBWV4dG4DYWVtAjEwAGJyaWQRMWRxaktOMHNibHExVm9PbjdzcnRjBmFwcF9pZBAyMjIwMzkxNzg4MjAwODkyAAEeYrGIpF_GdTPUjKc-szy8aPu2IjsB8y29m9O043wllUjtObfFmyseKx5Jrso_aem_UqxC_EHMfbrISAk1vnOX9g"><Music2 /> PRE-SAVE / LISTEN</a>
             </div>
           </Reveal>
         </div>
@@ -174,12 +175,12 @@ export default function Home() {
         </div>
         <div className="footer-center">
           <span>OFFICIAL K.A.R.R. WEBSITE</span>
-          <span>RUNAWAY HEART — 28 AUGUST 2026</span>
+        
         </div>
         <div className="footer-links">
-          <a href="#">INSTAGRAM</a>
-          <a href="#">YOUTUBE</a>
-          <a href="mailto:hello@example.com">EMAIL</a>
+          <a href="https://www.instagram.com/karrsynthwave/" target="_blank">INSTAGRAM</a>
+          <a href="https://www.youtube.com/@karrmusic5533" target="_blank">YOUTUBE</a>
+          <a href="mailto:karrmusic@outlook.com">EMAIL</a>
         </div>
       </footer>
     </main>
