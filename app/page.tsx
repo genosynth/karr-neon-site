@@ -7,6 +7,11 @@ import Countdown from "@/components/Countdown";
 import CursorGlow from "@/components/CursorGlow";
 import { Reveal } from "@/components/Reveal";
 
+const basePath =
+  process.env.NODE_ENV === "production"
+    ? "/karr-neon-site"
+    : "";
+
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const heroArtY = useTransform(scrollYProgress, [0, 0.32], [0, 145]);
@@ -21,7 +26,13 @@ export default function Home() {
 
       <nav className="nav shell">
         <a href="#top" className="nav-logo" aria-label="KARR home">
-          <Image src="/karr-logo-triangle.png" alt="K.A.R.R." width={190} height={150} priority />
+          <Image
+                src={`${basePath}/karr-logo-triangle.png`}
+                alt="K.A.R.R."
+                width={190}
+                height={150}
+                priority
+            />
         </a>
         <div className="nav-links">
           <a href="#release">Music</a>
@@ -38,7 +49,13 @@ export default function Home() {
 
       <section className="hero">
         <motion.div className="hero-image" style={{ y: heroArtY, opacity: heroOpacity }}>
-          <Image src="/runaway-heart.jpg" alt="Runaway Heart artwork" fill priority sizes="100vw" />
+          <Image
+            src={`${basePath}/runaway-heart.jpg`}
+            alt="Runaway Heart artwork"
+            fill
+            priority
+            sizes="100vw"
+          />
           <div className="hero-image-shade" />
         </motion.div>
 
@@ -50,7 +67,13 @@ export default function Home() {
             animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
             transition={{ duration: 1.2, delay: 0.2 }}
           >
-            <Image src="/karr-logo.png" alt="K.A.R.R." width={710} height={360} priority />
+            <Image
+              src={`${basePath}/karr-logo.png`}
+              alt="K.A.R.R."
+              width={710}
+              height={360}
+              priority
+            />
           </motion.div>
           <div className="runaway-script">Runaway Heart</div>
           <div className="release-line">
@@ -82,7 +105,12 @@ export default function Home() {
 
           <Reveal className="band-photo-wrap" delay={0.12}>
             <div className="corner-label">K.A.R.R. / 2026</div>
-            <Image src="/karr-band.jpg" alt="K.A.R.R. band portrait" fill sizes="(max-width: 900px) 100vw, 58vw" />
+            <Image
+              src={`${basePath}/karr-band.jpg`}
+              alt="K.A.R.R. band portrait"
+              fill
+              sizes="(max-width: 900px) 100vw, 58vw"
+            />
             <div className="photo-noise" />
             <div className="photo-frame" />
           </Reveal>
@@ -95,7 +123,12 @@ export default function Home() {
           <Reveal className="release-art-wrap">
             <div className="vinyl" aria-hidden="true"><div className="vinyl-label">K.A.R.R.</div></div>
             <motion.div className="release-cover" whileHover={{ rotate: -2, scale: 1.018 }} transition={{ duration: 0.35 }}>
-              <Image src="/runaway-heart.jpg" alt="Runaway Heart EP artwork" fill sizes="(max-width: 900px) 80vw, 42vw" />
+              <Image
+                src={`${basePath}/runaway-heart.jpg`}
+                alt="Runaway Heart EP artwork"
+                fill
+                sizes="(max-width: 900px) 80vw, 42vw"
+              />
             </motion.div>
           </Reveal>
 
@@ -132,7 +165,12 @@ export default function Home() {
 
       <footer id="contact" className="footer shell">
         <div className="footer-brand">
-          <Image src="/karr-logo-triangle.png" alt="K.A.R.R." width={180} height={140} />
+          <Image
+            src={`${basePath}/karr-logo-triangle.png`}
+            alt="K.A.R.R."
+            width={180}
+            height={140}
+          />
         </div>
         <div className="footer-center">
           <span>OFFICIAL K.A.R.R. WEBSITE</span>
