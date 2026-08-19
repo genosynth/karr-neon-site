@@ -29,8 +29,8 @@ export default function Home() {
           <Image
                 src={`${basePath}/karr-logo-triangle.png`}
                 alt="K.A.R.R."
-                width={190}
-                height={150}
+                width={380}
+                height={300}
                 priority
             />
         </a>
