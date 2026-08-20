@@ -38,6 +38,7 @@ export default function Home() {
           <a href="#release">Music</a>
           <a href="#about">About</a>
           <a href="#contact">Contact</a>
+          <a href="https://karrmusic.bandcamp.com/" target="blank">Store</a>
         </div>
         <div className="nav-socials">
           <a href="https://www.instagram.com/karrsynthwave/" target="_blank" aria-label="Instagram"><Instagram /></a>
@@ -99,7 +100,7 @@ export default function Home() {
              K.A.R.R is a professional power trio originating from the vibrant island of Malta. Drawing from diverse musical influences and backgrounds, the band crafts a distinctive sound rooted in synthwave, characterized by rich synthesizer textures and dynamic guitar-driven soundscapes. Buckle up as you take on a trip down the memory lane as time travel has never been this easy!
             </p>
             <p className="muted-copy">
-              This is the starting version of the story section — you can replace this with your real biography whenever you want.
+             
             </p>
             <a className="line-link" href="#release">HEAR THE NEXT CHAPTER <ArrowUpRight /></a>
           </Reveal>
